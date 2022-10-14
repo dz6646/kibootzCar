@@ -13,6 +13,11 @@ public class Heavy extends Vehicles{
                 '}';
     }
 
+    @Override
+    public double exhaust()
+    {
+        return super.exhaust() + 500 * this.pullNum;
+    }
     public int getPullNum() {
         return pullNum;
     }

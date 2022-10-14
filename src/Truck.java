@@ -16,6 +16,11 @@ public class Truck extends Heavy{
         this.maxWeight = maxWeight;
     }
 
+    @Override
+    public double exhaust()
+    {
+        return (super.exhaust() * 1.5);
+    }
     public Truck(int vehicleNum, int vehicleAge, int wheelsNum, String controlType, int polutionPerMin, int pullNum, int maxWeight) {
         super(vehicleNum, vehicleAge, wheelsNum, controlType, polutionPerMin, pullNum);
         this.maxWeight = maxWeight;

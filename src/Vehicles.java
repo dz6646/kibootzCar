@@ -12,9 +12,9 @@ public class Vehicles {
             this.controlType = controlType;
             this.polutionPerMin = polutionPerMin;
         }
-        public int exhaust(Vehicles car)
+        public double exhaust()
         {
-            return (60 * car.polutionPerMin);
+            return (60 * this.polutionPerMin);
         }
         @Override
         public String toString() {
